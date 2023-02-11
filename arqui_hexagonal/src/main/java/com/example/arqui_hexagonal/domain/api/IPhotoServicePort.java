@@ -1,0 +1,17 @@
+package com.example.arqui_hexagonal.domain.api;
+
+import com.example.arqui_hexagonal.domain.model.Photo;
+
+import java.util.List;
+
+public interface IPhotoServicePort {
+    Photo savePhoto(Photo photo);
+
+    List<Photo> getAllPhoto();
+
+    Photo getPhoto(Long PhotoId);
+
+    void updatePhoto(Photo photo);
+
+    void deletePhoto(Long PhotoId);
+}
