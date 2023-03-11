@@ -14,5 +14,5 @@ public interface IPhotoPersistencesPort {
 
     void updatePhoto(Photo photo);
 
-    void deletePhoto(Long PhotoId);
+    void deletePhoto(String photoId);
 }

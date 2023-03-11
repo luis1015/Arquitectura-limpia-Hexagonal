@@ -1,7 +1,6 @@
 package com.example.arqui_hexagonal.domain.usecase;
 
 import com.example.arqui_hexagonal.domain.api.ITypePort;
-import com.example.arqui_hexagonal.domain.model.Pokemon;
 import com.example.arqui_hexagonal.domain.model.Type;
 import com.example.arqui_hexagonal.domain.spi.ITypePersistencesPort;
 
@@ -26,7 +25,7 @@ public class TypeUseCase implements ITypePort {
     }
 
     @Override
-    public Pokemon getType(Long typeId) {
+    public Type getType(Long typeId) {
         return typePersistences.getType(typeId);
     }
 

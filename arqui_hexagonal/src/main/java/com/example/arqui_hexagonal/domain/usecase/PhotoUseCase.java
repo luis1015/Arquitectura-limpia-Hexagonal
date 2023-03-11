@@ -36,7 +36,7 @@ public class PhotoUseCase implements IPhotoServicePort {
     }
 
     @Override
-    public void deletePhoto(Long PhotoId) {
-        photoPersistencesPort.deletePhoto(PhotoId);
+    public void deletePhoto(String photoId) {
+        photoPersistencesPort.deletePhoto(photoId);
     }
 }
